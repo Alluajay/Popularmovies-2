@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ajay.multipaneactivity.MainActivity">
+    <item
+        android:orderInCategory="100"
+        android:title="Sort by"
+        app:showAsAction="never" >
+        <menu>
+            <item android:id="@+id/Popularity"
+                android:title="Popularity"></item>
+            <item android:id="@+id/Release_date"
+                android:title="Release Date"></item>
+            <item android:id="@+id/Rating"
+                android:title="Rating"></item>
+
+        </menu>
+
+    </item>
+    <item android:id="@+id/Favourite"
+        android:title="Favourites"></item>
+</menu>

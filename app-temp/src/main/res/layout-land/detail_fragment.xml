@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fcfcfc"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:id="@+id/detailed_fragment_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollIndicators="right">
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/Scroll"
+          >
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+          <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/Title"
+          android:background="@color/colorAccent">
+
+
+          <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Title"
+          android:id="@+id/detailed_title"
+          android:layout_alignParentTop="true"
+          android:fontFamily="@android:string/defaultVoiceMailAlphaTag"
+          android:textColor="#000000"
+          android:textSize="30dp"
+          android:textAlignment="center" />
+         </LinearLayout>
+
+         <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/Title"
+          android:layout_toRightOf="@+id/detailed_poster"
+          android:layout_toEndOf="@+id/detailed_poster"
+          android:id="@+id/relativeLayout">
+         <ImageButton
+          android:layout_width="35dp"
+          android:layout_height="35dp"
+          android:id="@+id/Fav_but"
+          android:background="@android:drawable/btn_star" />
+      <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="30dp"
+       android:text="Year"
+       android:id="@+id/detailed_Year"
+       android:layout_gravity="center"
+       android:textColor="#484646"
+       android:layout_below="@+id/Fav_but"/>
+
+         <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="25dp"
+          android:id="@+id/detailed_rating"
+          android:text="rating"
+          android:textColor="#000000"
+          android:layout_below="@id/detailed_Year" />
+         </RelativeLayout>
+
+
+   <ImageView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:id="@+id/detailed_poster"
+       android:layout_alignTop="@+id/relativeLayout"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true" />
+      <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Overview"
+       android:id="@+id/detailed_overview"
+       android:layout_below="@+id/detailed_poster"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+          />
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/Trailer"
+                  android:text="Trailer"
+                  android:layout_below="@+id/detailed_overview"
+                  android:layout_alignParentLeft="true"
+                  />
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/Review"
+                  android:text="Review"
+                  android:layout_below="@+id/detailed_overview"
+android:layout_alignParentRight="true"                  />
+          </RelativeLayout>
+      </ScrollView>
+
+
+</RelativeLayout>
